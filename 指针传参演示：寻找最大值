@@ -1,0 +1,26 @@
+#include <stdio.h>
+int Taffy(int *array,int Count)		//Taffy可用于寻找最大值 
+{
+	int i;
+	int max=array[0];
+	for(i=1;i<Count;i++) 
+{
+	if(array[i]>max)
+	{
+		max=array[i];
+	}
+	
+}
+	return max;
+	
+	
+}
+
+int main(void)
+{
+	int a[]={0x917813,0x137891,0x27139178,0x67676767};
+	int Max=Taffy(a,4);
+	printf("Max=%x\n",Max);
+	printf("Follow ace_taffy thank you nya!");
+	return(0);	
+}
